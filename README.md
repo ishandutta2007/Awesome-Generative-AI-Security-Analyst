@@ -60,7 +60,7 @@ Below is the structured overview of commercial, enterprise-grade Generative AI s
 
 ## 🟩 Open-Source Software
 
-Self-hosted, transparent, community-driven Generative AI security analyst platforms and autonomous SOC frameworks. Listed in **descending order by GitHub Star Count**.
+Self-hosted, transparent, community-driven Generative AI security analyst platforms and autonomous SOC frameworks. Listed in **descending order by GitHub Stars_Count**.
 
 ### 1. [AiSOC](https://github.com/beenuar/AiSOC) 🌟
 [![Stars](https://img.shields.io/github/stars/beenuar/AiSOC?style=social&color=white)](https://github.com/beenuar/AiSOC/stargazers)  
@@ -211,7 +211,7 @@ Contributions, new tool recommendations, and benchmarks are warmly welcomed!
 
 1. 🍴 Fork this repository.
 2. 🌿 Create your feature branch (`git checkout -b feature/awesome-tool`).
-3. 📝 Add your tool to the table/list following the formatting standards (ensure correct star badges and links).
+3. 📝 Add your tool to the table/list following the formatting standards (ensure correct Stars_Badges and links).
 4. 💾 Commit your changes (`git commit -m 'Add ToolName to awesome-list'`).
 5. 🚀 Push to the branch (`git push origin feature/awesome-tool`).
 6. 📬 Open a Pull Request.
