@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#0a0d18; border-radius:12px; font-family:'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d1a" />
+      <stop offset="50%" stop-color="#0e172a" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+
+    <!-- Glowing Cyber Blue Gradient -->
+    <linearGradient id="cyber-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <!-- Glowing Shield Gradient -->
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7928ca" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ff0080" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.7" opacity="0.6" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" opacity="0.4" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulse-ring {
+      0% { r: 45px; opacity: 0.8; stroke-width: 2px; }
+      50% { r: 85px; opacity: 0.2; stroke-width: 1px; }
+      100% { r: 45px; opacity: 0.8; stroke-width: 2px; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-50px); opacity: 0; }
+      50% { opacity: 0.6; }
+      100% { transform: translateY(370px); opacity: 0; }
+    }
+    @keyframes float-particle {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-12px) translateX(8px); }
+    }
+    @keyframes radar-sweep {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .radar-beam {
+      transform-origin: 1040px 180px;
+      animation: radar-sweep 8s linear infinite;
+    }
+    .ring-anim {
+      animation: pulse-ring 4s ease-in-out infinite;
+    }
+    .particle {
+      animation: float-particle 5s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Deep Background -->
+  <rect width="1200" height="360" fill="url(#bg-grad)" rx="12" />
+  <rect width="1200" height="360" fill="url(#cyber-grid)" rx="12" />
+
+  <!-- Dynamic Radar / AI Pulse in Background Right (Safe from Text) -->
+  <g opacity="0.45">
+    <circle cx="1040" cy="180" r="130" fill="none" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4" />
+    <circle cx="1040" cy="180" r="95" fill="none" stroke="#0284c7" stroke-width="1.2" opacity="0.6" />
+    <circle cx="1040" cy="180" r="60" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="1040" cy="180" r="45" class="ring-anim" fill="none" stroke="#00f2fe" />
+    <circle cx="1040" cy="180" r="8" fill="#00f2fe" filter="url(#soft-glow)" />
+
+    <!-- Radar Sweep Beam -->
+    <path class="radar-beam" d="M 1040 180 L 1170 140 A 130 130 0 0 1 1170 220 Z" fill="url(#cyber-blue)" opacity="0.12" />
+  </g>
+
+  <!-- Dynamic Floating Decorative Nodes in Back (Safe Area) -->
+  <g class="particle" opacity="0.7">
+    <circle cx="930" cy="80" r="4" fill="#38bdf8" />
+    <circle cx="1120" cy="290" r="3" fill="#a855f7" />
+    <circle cx="820" cy="300" r="4" fill="#00f2fe" />
+    <line x1="930" y1="80" x2="1040" y2="180" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.4" />
+    <line x1="1040" y1="180" x2="1120" y2="290" stroke="#a855f7" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.4" />
+    <line x1="1040" y1="180" x2="820" y2="300" stroke="#00f2fe" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.4" />
+  </g>
+
+  <!-- Foreground Shield / AI Emblem (Left) -->
+  <g transform="translate(70, 75)">
+    <!-- Outer Shield Glow -->
+    <path d="M 50 10 L 95 30 L 95 100 C 95 150 50 180 50 180 C 50 180 5 150 5 100 L 5 30 Z" 
+          fill="none" stroke="url(#cyber-blue)" stroke-width="3" filter="url(#soft-glow)" />
+    
+    <!-- Shield Fill Geometry -->
+    <path d="M 50 16 L 88 34 L 88 98 C 88 142 50 170 50 170 C 50 170 12 142 12 98 L 12 34 Z" 
+          fill="#0f172a" fill-opacity="0.85" stroke="#38bdf8" stroke-width="1.5" />
+    
+    <!-- Shield Core AI Circuit Symbol -->
+    <circle cx="50" cy="95" r="16" fill="url(#cyber-blue)" opacity="0.9" filter="url(#soft-glow)" />
+    <line x1="50" y1="45" x2="50" y2="79" stroke="#00f2fe" stroke-width="2.5" />
+    <line x1="50" y1="111" x2="50" y2="145" stroke="#00f2fe" stroke-width="2.5" />
+    <line x1="25" y1="95" x2="34" y2="95" stroke="#00f2fe" stroke-width="2.5" />
+    <line x1="66" y1="95" x2="75" y2="95" stroke="#00f2fe" stroke-width="2.5" />
+
+    <circle cx="50" cy="45" r="3.5" fill="#38bdf8" />
+    <circle cx="50" cy="145" r="3.5" fill="#38bdf8" />
+    <circle cx="25" cy="95" r="3.5" fill="#38bdf8" />
+    <circle cx="75" cy="95" r="3.5" fill="#38bdf8" />
+
+    <path d="M 32 65 L 40 73" stroke="#38bdf8" stroke-width="2" />
+    <path d="M 68 65 L 60 73" stroke="#38bdf8" stroke-width="2" />
+    <path d="M 32 125 L 40 117" stroke="#38bdf8" stroke-width="2" />
+    <path d="M 68 125 L 60 117" stroke="#38bdf8" stroke-width="2" />
+  </g>
+
+  <!-- Foreground Content: Header & Titles (Guaranteed Unhidden) -->
+  <g transform="translate(205, 0)">
+    <!-- Badge Pill -->
+    <g transform="translate(0, 68)">
+      <rect width="255" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" />
+      <circle cx="14" cy="14" r="5" fill="#10b981">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="28" y="18" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1.2">CURATED CYBERSECURITY AWESOME</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="145" font-size="38" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+      Awesome Generative AI <tspan fill="#38bdf8">Security Analyst</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="185" font-size="16.5" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+      Autonomous SOC Agents • GenAI Copilots • Alert Triage • Threat Hunting • Incident Response
+    </text>
+
+    <!-- Feature Tags Row -->
+    <g transform="translate(0, 222)">
+      <!-- Tag 1: Enterprise SaaS -->
+      <g transform="translate(0, 0)">
+        <rect width="168" height="34" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <circle cx="16" cy="17" r="4" fill="#3b82f6" />
+        <text x="28" y="22" fill="#cbd5e1" font-size="13" font-weight="600">Enterprise SaaS Copilots</text>
+      </g>
+
+      <!-- Tag 2: Open Source AI SOC -->
+      <g transform="translate(180, 0)">
+        <rect width="176" height="34" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <circle cx="16" cy="17" r="4" fill="#10b981" />
+        <text x="28" y="22" fill="#cbd5e1" font-size="13" font-weight="600">Open-Source AI SOCs</text>
+      </g>
+
+      <!-- Tag 3: MCP & Local LLMs -->
+      <g transform="translate(368, 0)">
+        <rect width="180" height="34" rx="7" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <circle cx="16" cy="17" r="4" fill="#a855f7" />
+        <text x="28" y="22" fill="#cbd5e1" font-size="13" font-weight="600">MCP &amp; Local LLM Runtimes</text>
+      </g>
+    </g>
+
+    <!-- Subtext Line / Metric Summary -->
+    <g transform="translate(0, 290)">
+      <text x="0" y="0" fill="#64748b" font-size="13" font-weight="500">
+        🛡️ Market Intelligence, Pricing Benchmarks, Autonomous Response &amp; Real-Time Detection
+      </text>
+    </g>
+  </g>
+</svg>
