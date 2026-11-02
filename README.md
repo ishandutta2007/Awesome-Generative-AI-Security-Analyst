@@ -4,11 +4,13 @@
 
 # 🛡️ Awesome Generative AI Security Analyst 🤖
 
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Help-Desk-Customer-Support-Ticketing/blob/main/CONTRIBUTING.md)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
 [![Tracked Repos](https://img.shields.io/badge/Open--Source-12%20Projects-blue.svg)](#-open-source-software)
 [![Enterprise Solutions](https://img.shields.io/badge/SaaS%20Solutions-10%20Platforms-purple.svg)](#-enterprise-saas--hosted-platforms)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 > 🚀 **A curated, comprehensive directory of elite Generative AI Security Analyst platforms, autonomous SOC agents, agentic threat detection copilots, and open-source SecOps intelligence engines.**  
 > 🌟 *Star this repository to stay ahead in autonomous defensive cyber operations!* 🌟
@@ -22,6 +24,8 @@
 - [🟩 Open-Source Software](#-open-source-software)
 - [📊 Feature Comparison Matrix](#-feature-comparison-matrix)
 - [🔍 Key Evaluation Criteria for AI Security Analysts](#-key-evaluation-criteria-for-ai-security-analysts)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⭐ Star History](#-star-history)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
@@ -182,6 +186,22 @@ When choosing or deploying an AI Security Analyst solution, consider these key o
 3. **🔌 Standardized Agent Protocols (MCP):** Does the tool utilize open standards like Anthropic's **Model Context Protocol (MCP)** to interact seamlessly across SIEM, SOAR, EDR, and ticketing platforms?
 4. **🎯 Hallucination Prevention & Grounding:** Are investigation summaries grounded in deterministic evidence trees, STIX threat intelligence, and MITRE ATT&CK taxonomy?
 5. **💰 Total Cost of Ownership (TCO):** Compare expensive hourly compute units (e.g., Microsoft SCUs at $4/hr continuously) against predictable self-hosted infrastructure.
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and using **Awesome Generative AI Security Analyst**! 🛡️✨
+
+If this project brought value to your security workflow, helped you select the right AI SOC tools, or saved you research hours:
+- ⭐ **Star** this repository to show your appreciation and boost its visibility!
+- 🍴 **Fork** and contribute your favorite SecOps agents, tools, and benchmarks.
+- 📢 **Share** it with your fellow defenders, blue teamers, and security engineers.
+- ☕ **Buy me a coffee / Sponsor:** If you'd like to back ongoing open-source curation and research, consider supporting via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Your support is deeply appreciated!
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Generative-AI-Security-Analyst&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Generative-AI-Security-Analyst&type=date&legend=top-left)
 
 ---
 
